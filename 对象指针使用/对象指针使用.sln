@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "对象指针使用", "对象指针使用\对象指针使用.vcxproj", "{6093A3DE-F2A5-489D-8122-0DC5B01BC077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6093A3DE-F2A5-489D-8122-0DC5B01BC077}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6093A3DE-F2A5-489D-8122-0DC5B01BC077}.Debug|Win32.Build.0 = Debug|Win32
+		{6093A3DE-F2A5-489D-8122-0DC5B01BC077}.Release|Win32.ActiveCfg = Release|Win32
+		{6093A3DE-F2A5-489D-8122-0DC5B01BC077}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
