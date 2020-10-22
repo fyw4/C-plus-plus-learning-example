@@ -26,4 +26,8 @@
 
 2020.10.22：
 	
-	1.增加“HelloWorld”，使用VSCode。
+	1.增加“HelloWorld”，使用VSCode；
+	
+	2.增加函数文件夹，增加3_1.cpp,3_17.cpp，使用VSCode；
+	
+	3.增加类与对象文件夹，完成TimeSet.cpp,使用VSCode。
