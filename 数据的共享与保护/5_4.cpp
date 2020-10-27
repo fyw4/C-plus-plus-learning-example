@@ -17,6 +17,8 @@ class Point{
             count--;
         }
 
+        static void Count();
+
         int getX(){
             return x;
         }
@@ -34,9 +36,15 @@ class Point{
             static int count;
 };
 
+void Point::Count(){
+    cout<<"Init Count is "<<count<<endl;
+}
+
 int Point::count = 0;
 
 int main(){
+    Point::Count();        //增加静态函数成员，可以通过类名调用
+
     Point a(4, 5);
     cout<<"Point A:"<<a.getX()<<","<<a.getY();
     a.showCount();
