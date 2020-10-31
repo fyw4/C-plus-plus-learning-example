@@ -1,4 +1,4 @@
-# C-plus-plus-learning-example
+看# C-plus-plus-learning-example
 
 自学习C++的例子
 
@@ -57,3 +57,7 @@
 
 	1.增加6_14.cpp，通过指针访问类的静态数据成员；
 	2.增加6_15.cpp，通过指针访问静态类函数成员。
+	
+2020.10.31：
+
+	1.增加继承于派生文件夹，新增7_4.cpp。
