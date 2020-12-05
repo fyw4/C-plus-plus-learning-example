@@ -1,6 +1,6 @@
-看# C-plus-plus-learning-example
+# C-plus-plus-learning-example
 
-自学习C++的例子
+以下为自学习C++的例子完成日期：
 
 2019.11.7：
 
