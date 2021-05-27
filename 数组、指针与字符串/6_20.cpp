@@ -1,34 +1,31 @@
 #include<iostream>
 #include<vector>
 
-using namespace std;
-
-//计算数组arr中元素平均值
+//计算arr数组元素平均值
 double average(const vector<double>&arr)
 {
-    double sum = 0;
-    for(unsigned i = 0;i < arr.size();i++)
-    {
-        sum += arr[i];
-    }
-
-    return sum/arr.size();
+	double sum = 0;
+	int i = 0;
+	for(i = 0; i < arr.size();i++)
+	{
+		sum += arr[i];
+		return sum/arr.size();
+	
 }
 
 int main()
 {
-    unsigned n;
-    cout << "n=";
-    cin >> n;
-
-    vector<double>arr(n);   //创建数组对象
-    cout << "Please input " << n << " real numbers:" << endl;
-    for(unsigned i = 0;i < n;i++)
-    {
-        cin >> arr[i];
-    }
-
-    cout << "Average = " << average(arr) << endl;
-
-    return 0;
+	int n = 0;
+	int i = 0;
+	cout << "n:";
+	cin >> n;
+	
+	vector<double>arr(n);
+	cout << "Please input" << n << "real numbers:" << endl;
+	for(i = 0; i < n;i++)
+	{
+		cin >> arr[i];
+	}
+	cout << "Average = " << average(arr) << endl;
+	return 0;
 }
