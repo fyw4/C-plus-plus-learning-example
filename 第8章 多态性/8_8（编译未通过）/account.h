@@ -28,13 +28,13 @@ public:
 	//显示账户信息
 	virtual void show() const;
 };
-class SavingAccount:public Account{	//储蓄账户类
+class SavingsAccount:public Account{	//储蓄账户类
 private:
 	Accumulator acc;				//辅助计算利息累加器
 	double rate;					//存款年利率
 public:
 	//构造函数
-	SavingAccount(const Date &date, const std::string &id, double rate);
+	SavingsAccount(const Date &date, const std::string &id, double rate);
 	double getRate() const {return rate;}
 	//存入现金
 	void deposit(const Date &date, double amount, const std::string &desc);

@@ -18,14 +18,14 @@ void Account::show() const{cout << id << "\tBalance:" << balance;}
 void Account::error(const string &msg) const{
 	cout << "Error(#" << id << "):" << msg << endl;
 }
-//SavingAccount类相关成员函数的实现
-SavingAccount::SavingAccount(const Date &date, const string &id, double rate)
+//SavingsAccount类相关成员函数的实现
+SavingsAccount::SavingsAccount(const Date &date, const string &id, double rate)
 	:Account(date, id), rate(rate), acc(date, 0){}
-void SavingAccount::deposit(const Date &date, double amount, const string &desc){
+void SavingsAccount::deposit(const Date &date, double amount, const string &desc){
 	record(date, amount, desc);
 	acc.change(date, getBalance());
 }
-void SavingAccount::withdraw(const Date &date, double amount, const string &desc){
+void SavingsAccount::withdraw(const Date &date, double amount, const string &desc){
 	if(amount > getBalance()){
 		error("not enough money");
 	}else{
@@ -33,7 +33,7 @@ void SavingAccount::withdraw(const Date &date, double amount, const string &desc
 		acc.change(date, getBalance());
 	}
 }
-void SavingAccount::settle(const Date &date){
+void SavingsAccount::settle(const Date &date){
 	if(date.getMonth() == 1){
 		double interest = acc.getSum(date) * rate
 			/ (date - Date(date.getYear() - 1, 1, 1));

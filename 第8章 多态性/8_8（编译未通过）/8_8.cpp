@@ -4,8 +4,8 @@ using namespace std;
 int main(){
 	Date date(2008, 11, 1);	//起始日期
 	//建立几个账户
-	SavingAccount sa1(date, "S3755217", 0.015);
-	SavingAccount sa2(date, "02342342", 0.015);
+	SavingsAccount sa1(date, "S3755217", 0.015);
+	SavingsAccount sa2(date, "02342342", 0.015);
 	CreditAccount ca(date, "C5392394", 10000, 0.0005, 50);
 	Account *accounts[] = {&sa1, &sa2, &ca};
 	const int n = sizeof(accounts)/sizeof(Account *);
